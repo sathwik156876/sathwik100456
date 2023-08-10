@@ -31,7 +31,7 @@ const registerCtrl = async (req, res, next) => {
       password: passswordHashed,
     });
     //redirect
-    res.redirect("/api/v1/users/profile-page");
+    res.redirect("/api/v1/users/login");
   } catch (error) {
     res.json(error);
   }
